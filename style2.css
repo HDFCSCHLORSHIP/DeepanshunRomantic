@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #ffd6e8, #ffe6f0);
+  overflow-x: hidden;
+  color: #4b004f;
+  position: relative;
+}
+
+.content {
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+h1, h2 {
+  font-weight: bold;
+  color: #c80064;
+}
+
+.slideshow {
+  margin: 20px auto;
+  max-width: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.slideshow img {
+  width: 100%;
+  height: auto;
+  transition: opacity 1s ease-in-out;
+  border-radius: 20px;
+}
+
+.letter, .things-i-love {
+  background: white;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  text-align: left;
+  color: #333;
+}
+
+.letter p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.things-i-love ul {
+  list-style: "❤️ ";
+  padding-left: 1.2rem;
+  font-size: 1.05rem;
+}
+
+.hearts {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.hearts::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('maxresdefault.jpg');
+  background-repeat: repeat;
+  animation: floatHearts 10s linear infinite;
+  opacity: 0.1;
+}
+
+@keyframes floatHearts {
+  from { background-position: 0 0; }
+  to { background-position: 0 -1000px; }
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forever Yours 💖</title>
+  <link rel="stylesheet" href="style3.css"/>
+</head>
+<body>
+
+  <!-- 🎶 Background Music -->
+  <audio id="bg-music" autoplay loop>
+    <source src="romantic2.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container">
+
+    <h1 class="romantic-line">"My love for you grows every second..."</h1>
+
+    <div class="flower-container">
+      <div class="stem"></div>
+      <div class="flower">
+        <div class="petal petal1"></div>
+        <div class="petal petal2"></div>
+        <div class="petal petal3"></div>
+        <div class="petal petal4"></div>
+      </div>
+    </div>
+
+    <h2 class="love-text">I love you so much 💖</h2>
+
+    <div class="letter-box">
+      <p>
+        My sweetheart,<br/><br/>
+        Every page of my life became poetry the moment you entered it.  
+        Your love is the most beautiful feeling I've ever known.  
+        You make me better, stronger, and happier.  
+        With every heartbeat, I fall more in love with you.<br/><br/>
+        Always yours,<br/>
+        ❤️
+      </p>
+    </div>
+
+  </div>
+
+  <script>
+    // 🎵 Support autoplay on mobile after user interaction
+    document.addEventListener('click', () => {
+      const music = document.getElementById("bg-music");
+      if (music && music.paused) {
+        music.play();
+      }
+    });
+  </script>
+</body>
+</html>
